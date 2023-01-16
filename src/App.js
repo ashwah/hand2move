@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import NavBar from './NavBar';
 import MyJobs from './MyJobs';

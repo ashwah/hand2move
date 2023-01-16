@@ -10,7 +10,7 @@ const MyJobs = () => {
   return (
     <div className="home">
       <JobList jobs={jobs} title="Upcoming jobs"/>
-      <JobList jobs={jobs.filter((job) => job.customer === 'Jonah Johnson')} title="Past jobs"/>
+      {/* <JobList jobs={jobs.filter((job) => job.customer === 'Jonah Johnson')} title="Past jobs"/> */}
     </div>
   );
 }
