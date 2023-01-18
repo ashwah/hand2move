@@ -9,19 +9,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-client
-  .query({
-    query: gql`
-      query GetLocations {
-        jobs {
-          id
-          status
-        }
-      }
-    `,
-  })
-  .then((result) => console.log(result));
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ApolloProvider client={client}>
