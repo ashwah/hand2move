@@ -1,7 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import NavBar from './NavBar';
 import MyJobs from './MyJobs';
+import NewJob from './NewJob';
+import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -9,10 +10,13 @@ function App() {
     <Router>
       <div className="App">
         <NavBar />
-        <div className="content">
+        <div className="content bg-gray-200">
           <Switch>
             <Route exact path="/">
-              <MyJobs />
+              <Home />
+            </Route>
+            <Route exact path="/new-job">
+              <NewJob />
             </Route>
             <Route exact path="/my-jobs">
               <MyJobs />
